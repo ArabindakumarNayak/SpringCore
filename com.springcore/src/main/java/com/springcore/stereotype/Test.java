@@ -10,6 +10,7 @@ public class Test {
 
 		Student std1 = (Student) ctx.getBean("student");
 		System.out.println(std1);
+		System.out.println(std1.getAddress());
 
 	}
 }
