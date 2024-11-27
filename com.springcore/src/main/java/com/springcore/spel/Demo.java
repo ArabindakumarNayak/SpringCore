@@ -11,6 +11,12 @@ public class Demo {
 	private int x;
 	@Value("20")
 	private int y;
+	
+	@Value("#{ T(java.lang.Math).PI}")
+	private double pi;
+	
+	@Value("#{ T(java.lang.Math).E}")
+	private double e;
 
 	
 	@Value("#{@demo.x+@demo.y}")
@@ -42,9 +48,34 @@ public class Demo {
 		this.y = y;
 	}
 
+	public double getPi() {
+		return pi;
+	}
+
+	public void setPi(double pi) {
+		this.pi = pi;
+	}
+
+	public double getE() {
+		return e;
+	}
+
+	public void setE(double e) {
+		this.e = e;
+	}
+
+	public int getSum() {
+		return sum;
+	}
+
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + " sum= " + sum + "]";
+		return "Demo [x=" + x + ", y=" + y + ", pi=" + pi + ", e=" + e + ", sum=" + sum + "]";
 	}
+
 
 }
