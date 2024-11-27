@@ -12,12 +12,8 @@
                            http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<context:component-scan
-		base-package="com.springcore.stereotype" />
+		base-package="com.springcore.spel" />
 		
-	<util:list list-class="java.util.ArrayList" id="temp">
-		<value>Raghunathpur</value>
-		<value>Berhampur</value>
-		<value>Biswanatahpur</value>
-	</util:list>
-	<bean class="com.springcore.stereotype.Teacher" name="t1" scope="prototype"></bean>
+
+
 </beans>
